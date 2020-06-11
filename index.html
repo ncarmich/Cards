@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flippin Cards Template</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="flashcards-app">
+  <div class="card">
+    <div class="top math" ></div>
+    <div class="side1" v-if="!cards.flipped" v-on:click="flipCard(card)">
+      <h1>What is 2+2?</h1>
+    </div>
+    <div class="side2" v-if="cards.flipped">
+      <h1>Fish</h1>
+      <hi v-else></h1>
+    </div>
+  </div>
+  
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
