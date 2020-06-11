@@ -14,7 +14,7 @@
     <div class="side1" v-if="!cards.flipped" v-on:click="flipCard(card)">
       <h1>What is 2+2?</h1>
     </div>
-    <div class="side2" v-if="cards.flipped">
+    <div class="side2" v-if="cards.flipped" v-on:click="flipCard(card)">
       <h1>Fish</h1>
       <hi v-else></h1>
     </div>
